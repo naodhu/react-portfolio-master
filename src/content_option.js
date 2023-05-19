@@ -16,7 +16,7 @@ const introdata = {
   animated: {
     first: "I love coding",
     second: "I code cool websites",
-    third: "I develop mobile apps",
+    third: "I develop mobile app",
   },
   description:
     "I'm Naod Hunde, a full stack developer based in Sydney, Australia specializing in building exceptional websites, applications, and everything in between.",
