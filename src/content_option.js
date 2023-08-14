@@ -3,6 +3,7 @@ import ChatSupport from "../src/assets/img/project2.png";
 import NoteTaker from "../src/assets/img/project3.png";
 import TravelGuide from "../src/assets/img/project1.png";
 import InventoryHub from "../src/assets/img/InventoryHub.png";
+import ExpenseManager from "../src/assets/img/ExpenseManager.png";
 
 const logotext = "Naod";
 const meta = {
@@ -46,7 +47,7 @@ const skills = [
     name: "SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB",
   },
   {
-    name: "React",
+    name: "React, React Native, Redux, Context API",
   },
   {
     name: "Git, Github, Version Control",
@@ -125,6 +126,13 @@ const dataportfolio = [
       "Allowing users to create, read, update, and delete product entries. Utilized modern technologies, including React, Node.js, Express, and MongoDB.",
     link: "#",
     code: "https://github.com/naodhu/Products.git",
+  },
+  {
+    img: ExpenseManager,
+    description:
+      "Built using React 18,The project follows best practices for modern web development, including code maintainability, scalability, and efficient performance.",
+    link: "https://steady-fairy-435258.netlify.app/",
+    code: "https://github.com/naodhu/ExpenseManager.git",
   },
 ];
 
