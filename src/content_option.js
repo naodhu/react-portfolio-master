@@ -4,6 +4,7 @@ import NoteTaker from "../src/assets/img/project3.png";
 import TravelGuide from "../src/assets/img/project1.png";
 import InventoryHub from "../src/assets/img/InventoryHub.png";
 import ExpenseManager from "../src/assets/img/ExpenseManager.png";
+import InvestmentCalc from "../src/assets/img/react-investment-calculator.png";
 
 const logotext = "Naod";
 const meta = {
@@ -134,6 +135,13 @@ const dataportfolio = [
     link: "https://steady-fairy-435258.netlify.app/",
     code: "https://github.com/naodhu/ExpenseManager.git",
   },
+  {
+    img: InvestmentCalc,
+    description:"A simple investment calculator built with React 18.",
+    link: "https://musical-syrniki-e46387.netlify.app/",
+    code: "https://github.com/naodhu/react-investment-calculator.git",
+  },
+  
 ];
 
 const contactConfig = {
