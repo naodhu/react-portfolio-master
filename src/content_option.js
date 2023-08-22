@@ -6,6 +6,18 @@ import InventoryHub from "../src/assets/img/InventoryHub.png";
 import ExpenseManager from "../src/assets/img/ExpenseManager.png";
 import InvestmentCalc from "../src/assets/img/react-investment-calculator.png";
 import Nike from "../src/assets/img/Nike.png";
+import {
+  FaCode,
+  FaLaptopCode,
+  FaDesktop,
+  FaNodeJs,
+  FaDatabase,
+  FaReact,
+  FaGithub,
+  FaServer,
+  FaCloud,
+  FaCodeBranch,
+} from "react-icons/fa";
 
 const logotext = "Naod";
 const meta = {
@@ -15,82 +27,154 @@ const meta = {
 };
 
 const introdata = {
-  title: "I’m Naod Hunde",
+  title: "Hello, I'm Naod Hunde",
   animated: {
-    first: "I love coding",
-    second: "I code cool websites",
-    third: "I develop mobile app",
+    first: "Passionate about coding",
+    second: "Crafting captivating websites",
+    third: "Building innovative mobile apps",
   },
   description:
-    "I'm Naod Hunde, a full stack developer based in Sydney, Australia specializing in building exceptional websites, applications, and everything in between.",
-  your_img_url: "",
+    "Greetings! I'm Naod Hunde, a dedicated full stack developer situated in the vibrant city of Sydney, Australia. My expertise lies in creating remarkable websites, crafting applications that push boundaries, and seamlessly connecting the digital world with real-life experiences.",
+  your_img_url: "", // Add your image URL here
 };
 
+
 const dataabout = {
-  title: "About me",
+  title: "A Little Bit About Me",
   aboutme:
-    "I’m a Junior Software Developer and I’m knowledgeable in user interface, testing and debugging processes. I am a driven and self-motivated professional who likes to solve problems. By combining a passion for usability and user experience with technical knowledge, I create client friendly and efficient digital experiences with attention to detail. I strive to bring a collaborative spirit that enables the smooth functionality of cross functional teams.",
+    "Greetings! I'm Naod Hunde, a budding Junior Software Developer based in sunny Sydney. My journey in the world of technology has equipped me with expertise in user interfaces, testing, and debugging processes. Driven by a relentless passion for problem-solving, I thrive on crafting elegant solutions that blend functionality and aesthetics. I'm a firm believer in the power of teamwork and collaboration, ensuring smooth operations within cross-functional setups. My dedication lies in creating digital experiences that are not only efficient but also user-centric and enjoyable.",
 };
+
 
 const skills = [
   {
     name: "HTML5, CSS3",
+    icon: <FaCode />,
   },
   {
     name: "JavaScript, jQuery",
+    icon: <FaLaptopCode />,
   },
   {
     name: "Bootstrap, responsive web design",
+    icon: <FaDesktop />,
   },
   {
     name: "Node.js, Express.js",
+    icon: <FaNodeJs />,
   },
   {
-    name: "SQL and NoSQL databases (PostgreSQL, MySQL, MongoDB",
+    name: "SQL and NoSQL databases",
+    icon: <FaDatabase />,
   },
   {
     name: "React, React Native, Redux, Context API",
+    icon: <FaReact />,
   },
   {
     name: "Git, Github, Version Control",
+    icon: <FaGithub />,
   },
   {
     name: "RESTful API design and development",
+    icon: <FaServer />,
   },
   {
     name: "AWS, Azure, Heroku, PWA",
+    icon: <FaCloud />,
   },
   {
-    name: "Continuous Integration and Continuous Deployment (CI/CD) tools (Jenkins, Travis CI, CircleCI, GitLab CI)",
+    name: "Continuous Integration and Continuous Deployment (CI/CD) tools",
+    icon: <FaCodeBranch />,
   },
 ];
 
 const services = [
   {
     title: "Frontend Development",
-    description:
-      "Experienced in using modern technologies and frameworks to create user-friendly and responsive web interfaces. Skilled in HTML, CSS, JavaScript and frameworks such as React.js.",
+    description: (
+      <>
+        <p>
+          Experienced in front-end development with a focus on user-friendly and
+          responsive interfaces.
+        </p>
+        <ul>
+          <li>
+            Developed a React Native application for login pages, utilizing
+            TypeScript and Tailwind CSS, based on Figma designs.
+          </li>
+          <li>
+            Collaborated with design teams to ensure accurate implementation and
+            adherence to UI/UX best practices.
+          </li>
+          <li>
+            Implemented secure authentication and data validation
+            functionalities to enhance user login experience.
+          </li>
+          <li>
+            Conducted comprehensive testing and debugging to ensure reliable and
+            bug-free applications.
+          </li>
+          <li>
+            Provided valuable feedback in code reviews to improve code quality
+            and maintainability.
+          </li>
+          <li>
+            Contributed to an agile development environment, following SCRUM
+            methodologies.
+          </li>
+          <li>
+            Proficient in leveraging modern development tools, including Git for
+            version control.
+          </li>
+          <li>
+            Actively engaged in team meetings, offering ideas and solutions to
+            technical challenges.
+          </li>
+        </ul>
+      </>
+    ),
+    icon: <FaCode />,
   },
   {
     title: "Backend Development",
-    description:
-      "Proficient in server-side programming, creating APIs, managing databases, and implementing authentication and authorization. Familiar with Node.js, Express.js, and databases like MongoDB and SQL.",
+    description: (
+      <>
+        <p>
+          Proficient in designing and implementing server-side solutions for
+          robust applications.
+        </p>
+        <ul>
+          <li>
+            Developed a cross-platform mobile app using Flutter for Android and
+            iOS platforms.
+          </li>
+          <li>
+            Deployed microservices with API gateway and load balancing on Google
+            Cloud Platform (GCP).
+          </li>
+          <li>
+            Utilized Cloud Run Functions for building scalable and
+            cost-effective serverless applications.
+          </li>
+          <li>
+            Conducted comprehensive end-to-end testing using Cypress to ensure
+            app quality.
+          </li>
+          <li>
+            Collaborated on backend development using Node.js, creating RESTful
+            APIs and integrating third-party services.
+          </li>
+          <li>
+            Gained practical experience and skills in Flutter, GCP, API gateway,
+            Cloud Run Functions, Cypress, and Node.js.
+          </li>
+        </ul>
+      </>
+    ),
+    icon: <FaServer />,
   },
-  {
-    title: "Full Stack Applications",
-    description:
-      "Capable of designing, developing, and managing complete web applications. This involves integrating frontend and backend technologies, ensuring efficient data flow, and optimizing application performance.",
-  },
-  {
-    title: "Testing & Debugging",
-    description:
-      "Experience with testing methodologies, debugging tools, and writing maintainable code. Knowledgeable in both unit testing and integration testing.",
-  },
-  {
-    title: "Version Control & Deployment",
-    description:
-      "Familiar with Git for version control, collaboration, and code management. Experienced in deploying applications using platforms like Heroku and Netlify.",
-  },
+  // ... Other services ...
 ];
 
 const dataportfolio = [
@@ -98,7 +182,7 @@ const dataportfolio = [
     img: EazyMart,
     description:
       "A MERN stack web application enabling users to search, compare, and manage electronic products",
-    link: "https://eazymartshop.herokuapp.com/",
+    link: "https://productstore-zmxj.onrender.com",
     code: "https://github.com/naodhu/chat-support1.git",
   },
   {
@@ -126,14 +210,14 @@ const dataportfolio = [
     img: InventoryHub,
     description:
       "Allowing users to create, read, update, and delete product entries. Utilized modern technologies, including React, Node.js, Express, and MongoDB.",
-    link: "#",
+    link: "https://product-store1.netlify.app/",
     code: "https://github.com/naodhu/Products.git",
   },
   {
     img: ExpenseManager,
     description:
       "Built using React 18,The project follows best practices for modern web development, including code maintainability, scalability, and efficient performance.",
-    link: "https://steady-fairy-435258.netlify.app/",
+    link: "https://expense-manager-react1.netlify.app/",
     code: "https://github.com/naodhu/ExpenseManager.git",
   },
   {

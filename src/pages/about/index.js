@@ -2,14 +2,7 @@ import React from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  dataabout,
-  meta,
-  // worktimeline,
-  skills,
-  services,
-} from "../../content_option";
-
+import { dataabout, meta, skills, services } from "../../content_option";
 
 export const About = () => {
   return (
@@ -26,16 +19,17 @@ export const About = () => {
             <hr className="t_border my-4 ml-0 text-left" />
           </Col>
         </Row>
-        <Row className="sec_sp">
+        <Row className="sec_sp about-section">
           <Col lg="5">
             <h3 className="color_sec py-4">{dataabout.title}</h3>
           </Col>
-          <Col lg="7" className="d-flex align-items-center">
+          <Col lg="7" className="d-flex align-items-center about-description">
             <div>
               <p>{dataabout.aboutme}</p>
             </div>
           </Col>
         </Row>
+
         <Row className="sec_sp">
           <Col lg="5">
             <h3 className="color_sec py-4"> Tech Stack</h3>
@@ -43,10 +37,15 @@ export const About = () => {
           <Col lg="7">
             {skills.map((data, i) => {
               return (
-                <div key={i}>
-                  <h3 className="progress-title">{data.name}</h3>
+                <div key={i} className="skill">
+                  <h3 className="progress-title">
+                    {data.name} {data.icon}
+                  </h3>
                   <div className="progress">
-                    <div className="progress-bar" style={{}}></div>
+                    <div
+                      className="progress-bar"
+                      style={{ width: data.progress }}
+                    ></div>
                   </div>
                 </div>
               );
@@ -54,15 +53,17 @@ export const About = () => {
           </Col>
         </Row>
         <Row className="sec_sp">
-          <Col lang="5">
-            <h3 className="color_sec py-4">services</h3>
+          <Col lg="5">
+            <h3 className="color_sec py-4">Services</h3>
           </Col>
           <Col lg="7">
             {services.map((data, i) => {
               return (
-                <div className="service_ py-4" key={i}>
-                  <h5 className="service__title">{data.title}</h5>
-                  <p className="service_desc">{data.description}</p>
+                <div className="service_" key={i}>
+                  <h5 className="service__title">
+                    {data.icon} {data.title}
+                  </h5>
+                  <div className="service_desc">{data.description}</div>
                 </div>
               );
             })}
