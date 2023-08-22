@@ -5,6 +5,7 @@ import TravelGuide from "../src/assets/img/project1.png";
 import InventoryHub from "../src/assets/img/InventoryHub.png";
 import ExpenseManager from "../src/assets/img/ExpenseManager.png";
 import InvestmentCalc from "../src/assets/img/react-investment-calculator.png";
+import Nike from "../src/assets/img/Nike.png";
 
 const logotext = "Naod";
 const meta = {
@@ -137,11 +138,16 @@ const dataportfolio = [
   },
   {
     img: InvestmentCalc,
-    description:"A simple investment calculator built with React 18.",
+    description: "A simple investment calculator built with React 18.",
     link: "https://musical-syrniki-e46387.netlify.app/",
     code: "https://github.com/naodhu/react-investment-calculator.git",
   },
-  
+  {
+    img: Nike,
+    description: "UI/UX website for Nike shoes",
+    link: "https://nike-clone1.netlify.app/",
+    code: "https://github.com/naodhu/Nike.git",
+  },
 ];
 
 const contactConfig = {
